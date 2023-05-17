@@ -1,0 +1,349 @@
+/* Styles globaux */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: rgba(158, 55, 55, 0.459);
+}
+
+/* Styles spécifiques au header/nav */
+
+nav {
+  background: #ee5f0081;
+  padding: 20px;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  position: relative;
+  padding: 10px;
+  margin: 5px;
+}
+
+li:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0%;
+  height: 3px;
+  background-color: #fff;
+  transition: width 0.3s ease-in-out, left 0.3s ease-in-out;
+}
+
+li:hover:before {
+  width: 100%;
+  left: 0%;
+  scale: 1.35;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.5em;
+  font-weight: 600;
+}
+
+
+
+
+/* Styles spécifiques à la section exo-1-container */
+
+#exo-1-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #e2e0e0;
+}
+
+#exo-1-container h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+#exo-1-container h2 {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+#exo-1-container form {
+  margin-bottom: 10px;
+}
+
+#exo-1-container label {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+#exo-1-container input[type="text"] {
+  width: 100px;
+}
+
+#exo-1-container button[type="submit"] {
+  padding: 5px 10px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+#exo-1-container button[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+#exo-1-container .result {
+  margin-top: 20px;
+}
+
+#exo-1-container h3 {
+  font-size: 16px;
+}
+
+#exo-1-container table {
+  border-collapse: collapse;
+  width: 200px;
+  text-align: center;
+}
+
+#exo-1-container td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#exo-1-container td:first-child {
+  font-weight: bold;
+}
+
+/* Styles spécifiques à l'exo-2-container */
+.exo-2-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #e2e0e0;
+}
+
+/* Styles spécifiques à l'exo-3-container */
+/* Styles pour le conteneur principal */
+.exo-3-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: Arial, sans-serif;
+  background-color: #e2e0e0;
+  padding: 20px;
+}
+
+/* Styles pour le titre */
+.exo-3-container h1 {
+  text-align: center;
+  color: #333;
+}
+
+/* Styles pour le formulaire */
+.exo-3-container form {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.exo-3-container form label {
+  display: block;
+  margin-bottom: 10px;
+  color: #555;
+}
+
+.exo-3-container form input[type="text"] {
+  padding: 5px;
+  width: 200px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.exo-3-container form input[type="checkbox"] {
+  margin-left: 5px;
+}
+
+.exo-3-container form button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.rayon-result {
+  margin-top: 20px;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* Styles spécifiques à l'exo-4-container */
+
+.exo-4-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #e2e0e0;
+}
+
+.exo-4-container h1 {
+  margin-bottom: 20px;
+}
+
+.exo-4-container form {
+  margin-bottom: 20px;
+}
+
+.exo-4-container label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.exo-4-container input[type="text"] {
+  padding: 5px;
+  width: 200px;
+  margin-bottom: 10px;
+}
+
+.exo-4-container button {
+  padding: 5px 10px;
+  margin-right: 10px;
+}
+
+.exo-4-container .result {
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+
+/* Styles spécifiques à l'exo-5-container */
+
+.exo-5-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #e2e0e0;
+}
+
+.exo-5-container #notes-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.exo-5-container #notes-form fieldset {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Styles spécifiques à la section exo-6-container & exo-8-container & exo-9-container*/
+.exo-6-container,
+.exo-8-container,
+.exo-9-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+  background-color: #e2e0e0;
+}
+
+/* Styliser le titre */
+.exo-6-container h1,
+.exo-6-container p,
+.exo-8-container h1,
+.exo-8-container p,
+.exo-9-container h1,
+.exo-9-container p {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Styliser le formulaire */
+.exo-6-container form,
+.exo-8-container form,
+.exo-9-container form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.exo-6-container form label,
+.exo-8-container form label,
+.exo-9-container form label {
+  margin-right: 10px;
+  color: #555;
+}
+
+.exo-6-container form select,
+.exo-8-container form select,
+.exo-9-container form select {
+  padding: 5px 10px;
+}
+
+.exo-6-container form button,
+.exo-8-container form button,
+.exo-9-container form button {
+  padding: 5px 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  margin-left: 20px;
+}
+
+.char-result {
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+/* Styles spécifiques à l'exo-7-container */
+
+.exo-7-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #e2e0e0;
+}
+
+.exo-7-container table tbody {
+  display: flex;
+}
+
+.exo-7-container table tbody td {
+  border: 1px solid black;
+  text-align: center;
+  padding: 5px;
+}
+
+.exo-7-container p {
+  margin-top: 15px;
+  font-size: 24px;
+}
+
+/*  Styles spécifiques à l'exo-10-container */
+
+.exo-10-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #e2e0e0;
+}
